@@ -9,25 +9,28 @@ class ListQueue : public Queue<T>
 public:
 	void push(const T& elm)
 	{
-		/* YOUR CODE HERE */
+		list.tailInsert(elm);
 	}
 
 	void pop()
 	{
-		/* YOUR CODE HERE */
+		list.headRemove();
 	}
 
 	T front()
 	{
 		T dataValue = 0;
-		/* YOUR CODE HERE */
+		dataValue = list.at(0);
 		return dataValue;
 	}
 
 	bool isEmpty()
 	{
 		bool isItEmpty = true;
-		/* YOUR CODE HERE */
+		if (list.length() != 0)
+		{
+			isItEmpty = false;
+		}
 		return isItEmpty;
 	}
 

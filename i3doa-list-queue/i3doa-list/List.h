@@ -33,7 +33,7 @@ public:
 	virtual void clear() = 0;
 
 	// Special - Required for Queue in later exercise
-	virtual void tailInsert(const T& data) { std::exception("Not Implemented"); };
+	virtual void tailInsert(const T& data) {  };
 
 	// Destructor
 	virtual ~List() {}

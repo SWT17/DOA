@@ -10,6 +10,7 @@ public:
 	LinkedList() 
 	: head(nullptr), size(0)
 	{
+		//test
 	}
 
 

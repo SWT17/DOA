@@ -23,7 +23,7 @@
     <ProjectGuid>{81E2D323-A544-48A8-B652-1EC2AA65732D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>i3doaqueue</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

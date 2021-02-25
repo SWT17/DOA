@@ -26,8 +26,11 @@ int main()
 	//} while (nDisks > 0);
 
 	//==================================
-
+	printf("printDownTo1: \n");
 	printDownTo1(6);
+	printf("fib:\n");
+	printf("%u",fib(0));
+
 	
 	// Test Fibomacci()
 	/*int n = 0;

@@ -42,7 +42,15 @@ double power(int x, int exp)
 
 unsigned int fib(unsigned int n)
 {
-	return 1;
+	if (n < 2)
+	{
+		return n;
+	}
+	else
+	{
+		return fib(n - 1) + fib(n - 2);
+	}
+	
 }
 
 void hanoi(int nDisks, int from, int to, int via)

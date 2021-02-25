@@ -13,6 +13,8 @@
 * 
 * 1. Size and complexity is n - since we have n elements to traverse through.
 * 2. BaseCase must be n=0, since going thorugh the whole n elements didnt find the x value. Return must be false
+* 3. recursive element is checking the array at index n through n-1 to n= 0;
+* 4. 
 */
 bool SearchAnArray(int* ar, unsigned int x,unsigned int n)
 {
@@ -22,13 +24,13 @@ bool SearchAnArray(int* ar, unsigned int x,unsigned int n)
 	}
 	else
 	{
-		if (ar[n] == x)
+		if (ar[n-1] == x)
 		{
 			return true;
 		}
 		else
 		{
-			SearchAnArray(ar, x, n - 1);
+			return SearchAnArray(ar, x, n - 1);
 		}
 	}
 }

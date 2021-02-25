@@ -6,10 +6,11 @@ using namespace std;
 
 int main()
 {
-	const unsigned int n = 6;
-	int Ar[n] = { 1,2,3,4,5,6 };
+	const unsigned int n = 5;
+	int Ar[n] = { 1,2,3,4,5};
 	int* p = Ar;
+	bool res = SearchAnArray(p,3,3);
 
-	SearchAnArray(p, 3, n);
+	printf("%d", res);
 
 }

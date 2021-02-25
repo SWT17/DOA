@@ -27,8 +27,10 @@ int main()
 
 	//==================================
 
+	printDownTo1(6);
+	
 	// Test Fibomacci()
-	int n = 0;
+	/*int n = 0;
 	do
 	{
 		cout << "FINBOACCI: Enter number: ";
@@ -36,6 +38,6 @@ int main()
 		cout << "fib(n) = " << fib(n) << endl;
 	} while (n >= 0);
 
-	return 0;
+	return 0;*/
 
 }

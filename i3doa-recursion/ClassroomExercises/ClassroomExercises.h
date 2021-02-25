@@ -1,6 +1,5 @@
 #pragma once
 
-
 unsigned int factorial(unsigned int n);
 void printDownTo1(unsigned int n);
 double power(int x, int exp);

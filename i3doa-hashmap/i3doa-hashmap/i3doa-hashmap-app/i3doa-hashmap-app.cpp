@@ -20,8 +20,24 @@ int main()
     Stopwatch sw;
     OAHashMap <string, string>my_map(MAP_SZ, zeroHash);
 
-    cout << "TIME TO CREATE SOM PERFORMANCE TESTS!!!! :-)" << std::endl;
+    //Indlæs ordene fra words.txt
+    ft.read("words.txt", 10);
+    int counter = 0;
+    size_t size = ft.getSize();
 
+    //Indsæt i hashmap
+    while (counter <= size)
+    {
+        my_map.insert(ft.next(), "value");
+    }
+    
+    string searchRes = "";
+
+    ft.restart();
+
+
+
+   
     return 0;
 }
 

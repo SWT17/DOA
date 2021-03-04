@@ -76,6 +76,7 @@
 			if ((index = findIndex(key)) == KEY_NOT_FOUND) return;
 
 			map[index].state = MapEntry::AddressState::PREV_USED;
+		
 			--nEntriesUsed;
 		}
 
@@ -124,13 +125,76 @@
 		// ==========================================================================================
 		int findIndex(const KeyType& key)
 		{
+			/*Use Adresse State PREV_USED and NEVER_USED to determine if af Key is even in the map.
+			If search for a given Key hits a NEVER_USED the key is not in the given map and should return -1*/
+			
+			/* First stop is to calculate the hashIndex*/
+			int index, hashIndex;
 
-			/* YOU MUST FINALIZE THIS METHOD!!! */
+			index = hashIndex = hash(key,mapSize);
 
-			// Find hashed index
+			/*Now, check the given map index adressestate 
+			- if OCCUPIED check if the key at the index matches our key. If not, start probing until match is found or index
+			with adressestate NEVER_USED
+			- if NEVER_USED, this key is not in the map
+			- if PREV_USED, start probing and for each prob check if the key at the new index matches with our key.
+			*/
+			if (map[hashIndex].state == MapEntry::AddressState::NEVER_USED)
+			{
+				return KEY_NOT_FOUND;
+			}
 
-			// Probe if to find key
+			if (map[hashIndex].state == MapEntry::AddressState::OCCUPIED)
+			{
+				if (map[hashIndex].key == key)
+				{
+					// Key is in map - return index
+					return hashIndex;
+				}
 
+				int nProbes = 0;
+
+				index = (hashIndex + probe(++nProbes)) % mapSize;	// start probing
+
+				while (map[index].state == MapEntry::AddressState::OCCUPIED || map[index].state == MapEntry::AddressState::PREV_USED)
+				{
+					if (map[index].key == key)
+					{
+						// Key is in map - return index
+						return hashIndex;
+					}
+					index = (hashIndex + probe(++nProbes)) % mapSize;	// probing
+
+					/*Map as been fully traversed, only occupied and prev used index-states*/
+					if (nProbes == mapSize)
+					{
+						return KEY_NOT_FOUND;
+					}
+				}
+			}
+
+			if (map[index].state == MapEntry::AddressState::PREV_USED)
+			{
+				int nProbes = 0;
+
+				index = (hashIndex + probe(++nProbes)) % mapSize;	// start probing
+
+				while (map[index].state == MapEntry::AddressState::OCCUPIED || map[index].state == MapEntry::AddressState::PREV_USED)
+				{
+					if (map[index].key == key)
+					{
+						// Key is in map - return index
+						return hashIndex;
+					}
+					index = (hashIndex + probe(++nProbes)) % mapSize;	// probing
+
+					/*Map as been fully traversed, only occupied and prev used index-states*/
+					if (nProbes == mapSize)
+					{
+						return KEY_NOT_FOUND;
+					}
+				}
+			}
 			return KEY_NOT_FOUND;
 		}
 

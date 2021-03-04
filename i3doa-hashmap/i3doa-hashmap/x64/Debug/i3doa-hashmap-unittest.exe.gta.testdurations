@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-hashmap\i3doa-hashmap\x64\Debug\i3doa-hashmap-unittest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="OAHashMapTest.CtorAndGetLoadFactor_LoadFactorIsZero" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Search_EmptyMap_SearchReturnsFalse" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Search_OneInserted_SearchReturnsTrue" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Search_SeveralElementsInserted_SearchReturnsTrue" Duration="1" />
+    <TestDuration Test="OAHashMapTest.InsertAndGetLoadFactor_OneInserted_LoadFactorIsCorrect" Duration="1" />
+    <TestDuration Test="OAHashMapTest.InsertAndGetLoadFactor_OneInsertedTwice_LoadFactorIsCorrect" Duration="1" />
+    <TestDuration Test="OAHashMapTest.InsertAndGetLoadFactor_OneTwoInserted_LoadFactorIsCorrect" Duration="1" />
+    <TestDuration Test="OAHashMapTest.InsertAndGetLoadFactor_FillMap_LoadFactorCorrect" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Insert_InsertIntoFullMap_ExceptionThrown" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Insert_RemoveFromFullMapThenInsert_NoExceptionThrown" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Remove_EmptyMap_NoError" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Remove_ExistingElement_ElementRemoved" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Remove_ExistingElement_OtherElementsUntouched" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Remove_NonExistingElement_OtherElementsUntouched" Duration="1" />
+    <TestDuration Test="OAHashMapTest.Remove_MiddleElementRemoved_LastElementsFound" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

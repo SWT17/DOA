@@ -31,14 +31,7 @@ int main()
         my_map.insert(ft.next(), "value");
     }
     
-    string searchRes = "";
-
-    ft.restart();
-
-
-
-   
-    return 0;
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

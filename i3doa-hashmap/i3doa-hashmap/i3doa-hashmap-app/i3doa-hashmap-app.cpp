@@ -16,21 +16,47 @@ inline int zeroHash(string key, int map_size)
 
 int main()
 {
+   
     FileTokenizer ft;
     Stopwatch sw;
     OAHashMap <string, string>my_map(MAP_SZ, zeroHash);
-
+    
     //Indlæs ordene fra words.txt
     ft.read("words.txt", 10);
     int counter = 0;
     size_t size = ft.getSize();
-
+   
+    printf("initializing hashmap - filling in items\n");
     //Indsæt i hashmap
     while (counter <= size)
     {
-        my_map.insert(ft.next(), "value");
+        string key,value, next = ft.next();
+        key = value = next;
+        my_map.insert(key,value);
+        counter++;
     }
-    
+    printf("hashmap filled\n");
+    counter = 0;
+    ft.restart();
+
+    printf("search started\n");
+    sw.start();
+    while (counter <= size)
+    {
+        string key, value, next = ft.next();
+        key = value = next;
+        my_map.search(key, &value);
+        counter++;
+    }
+    sw.stop();
+    printf("%d",sw.getDuration(Stopwatch::MILLISECONDS));
+    printf("search ended");
+    /*string searchRes = "";
+   
+    printf("%d, ",my_map.search(ft.next(), &searchRes));
+    printf("%s",searchRes.c_str());*/
+
+    return 0;
     
 }
 

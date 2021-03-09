@@ -1,2 +1,4 @@
 ﻿  i3doa-hashmap-app.cpp
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-hashmap\i3doa-hashmap\i3doa-hashmap-app\i3doa-hashmap-app.cpp(51,12): warning C4477: 'printf' : format string '%u' requires an argument of type 'unsigned int', but variadic argument 1 has type 'size_t'
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-hashmap\i3doa-hashmap\i3doa-hashmap-app\i3doa-hashmap-app.cpp(51,12): message : consider using '%zu' in the format string
   i3doa-hashmap-app.vcxproj -> C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-hashmap\i3doa-hashmap\x64\Debug\i3doa-hashmap-app.exe

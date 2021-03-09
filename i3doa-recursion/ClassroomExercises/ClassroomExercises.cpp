@@ -34,9 +34,35 @@ void printDownTo1(unsigned int n)
 }
 
 
-double power(int x, int exp)
+double power(double x, double exp)
 {
-	return 1;
+	/*The problem complexity is "exp" since this is the number of times we will need to do muliplication*/
+	//Base case must be exp = 0 which returns 1;
+
+	/*For positive intergers*/
+	if (exp >= 0)
+	{
+		if (exp == 0)
+		{
+			return 1;
+		}
+
+		/*The recursive solution is seeing that the rest is just x * x^(exp-1)
+		This also ensures that for positive integers we will reach the base case*/
+
+		return x * power(x, exp - 1);
+	}
+	
+	/*For negative integers*/
+	if (exp == 0)
+	{
+		return 1;
+	}
+	return(1 / x) * power(x,exp + 1);
+
+	
+
+	
 }
 
 

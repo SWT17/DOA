@@ -1,5 +1,8 @@
 #include "framework.h"
 #include "LabExercises.h"
+using namespace std;
+#include <vector>
+#include <algorithm>
 
 
 /*
@@ -34,3 +37,9 @@ bool SearchAnArray(int* ar, unsigned int x,unsigned int n)
 		}
 	}
 }
+
+bool BinarySearchFunc(vector<int> vec, int number)
+{
+	return binary_search(vec.begin(), vec.end(), number);
+}
+

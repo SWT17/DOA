@@ -29,7 +29,7 @@ int main()
 	printf("printDownTo1: \n");
 	printDownTo1(6);
 	printf("fib:\n");
-	printf("%u",fib(0));
+	printf("%u\n",fib(0));
 
 	
 	// Test Fibomacci()

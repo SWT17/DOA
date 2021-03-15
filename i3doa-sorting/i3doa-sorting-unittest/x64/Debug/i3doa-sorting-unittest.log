@@ -1,0 +1,12 @@
+﻿  test.cpp
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting\Quicksort.h(24,1): error C3493: 'pivotvalue' cannot be implicitly captured because no default capture mode has been specified
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting\Quicksort.h(49): message : see reference to function template instantiation 'void quicksort<T>(T *,int,int)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting-unittest\test.cpp(63): message : see reference to function template instantiation 'void quicksort<int>(T *,int)' being compiled
+          with
+          [
+              T=int
+          ]

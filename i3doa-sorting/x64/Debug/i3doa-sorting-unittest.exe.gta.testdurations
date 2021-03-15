@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\x64\Debug\i3doa-sorting-unittest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="QuicksortUnitTest.FindMedioan_3ElementArray_NoError" Duration="13" />
+  </TestDurations>
+</GtaTestDurations>

@@ -1,0 +1,16 @@
+﻿  i3doa-sorting-PerformanceTestingApp.cpp
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting-PerformanceTestingApp\FileTokenizer.h(62,16): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting-PerformanceTestingApp\i3doa-sorting-PerformanceTestingApp.cpp(15,50): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting\Quicksort.h(21): error C3861: 'findMedian': identifier not found
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting\Quicksort.h(21): message : 'findMedian': function was not declared in the template definition context and can be found only via argument-dependent lookup in the instantiation context
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting\Quicksort.h(49): message : see reference to function template instantiation 'void quicksort<T>(T *,int,int)' being compiled
+          with
+          [
+              T=std::string
+          ]
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting-PerformanceTestingApp\i3doa-sorting-PerformanceTestingApp.cpp(20): message : see reference to function template instantiation 'void quicksort<std::string>(T *,int)' being compiled
+          with
+          [
+              T=std::string
+          ]
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-sorting\i3doa-sorting\Quicksort.h(24,1): error C3493: 'pivotvalue' cannot be implicitly captured because no default capture mode has been specified

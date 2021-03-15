@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="12" failures="0" disabled="0" errors="0" timestamp="2016-03-16T13:18:55" time="0.111" name="AllTests">
+  <testsuite name="MinHeapUnitTest" tests="12" failures="0" disabled="0" errors="0" time="0.093">
+    <testcase name="Ctor_VanillaHeap_HeapIsEmpty" status="run" time="0" classname="MinHeapUnitTest" />
+    <testcase name="Ctor_OneElementInserted_HeapIsNotEmpty" status="run" time="0" classname="MinHeapUnitTest" />
+    <testcase name="Peek_OneElementInserted_CorrectElementInFront" status="run" time="0.001" classname="MinHeapUnitTest" />
+    <testcase name="Peek_OneElementInsertedTwoPeeks_CorrectElementInFront" status="run" time="0.001" classname="MinHeapUnitTest" />
+    <testcase name="Insert_TwoElementInserted_CorrectElementInFront" status="run" time="0.001" classname="MinHeapUnitTest" />
+    <testcase name="Remove_OneElementInserted_HeapIsEmpty" status="run" time="0.001" classname="MinHeapUnitTest" />
+    <testcase name="Remove_TwoElementsInsertedOneRemoved_HeapIsNotEmpty" status="run" time="0.001" classname="MinHeapUnitTest" />
+    <testcase name="Remove_TwoElementsInsertedTwoRemoved_HeapIsEmpty" status="run" time="0" classname="MinHeapUnitTest" />
+    <testcase name="Remove_TwoElementsInsertedOneRemoved_CorrectElementInFront" status="run" time="0" classname="MinHeapUnitTest" />
+    <testcase name="Insert_FourElementsInsertedUnOrdered_CorrectElementInFront" status="run" time="0.002" classname="MinHeapUnitTest" />
+    <testcase name="Insert_FourElementsInsertedOneRemoved_CorrectElementInFront" status="run" time="0.001" classname="MinHeapUnitTest" />
+    <testcase name="ArrayCtor_HeapConstructed_IsAHeap" status="run" time="0" classname="MinHeapUnitTest" />
+  </testsuite>
+</testsuites>

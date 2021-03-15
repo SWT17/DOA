@@ -41,6 +41,23 @@ protected:
 
 };
 
+
+TEST_F(QuicksortUnitTest,FindMedioan_3ElementArray_NoError)
+{
+	int ar[5] = { 1,5,6,7,8 };
+	int ar2[6] = { 1,5,6,7,8,9 };
+
+	int* p = ar;
+	int* p2 = ar2;
+	
+	auto median = findMedian(p, 1, 5);
+	auto median2 = findMedian(p2, 1, 6);
+
+	ASSERT_EQ(6, median);
+	ASSERT_EQ(7, median2);
+}
+
+
 TEST_F(QuicksortUnitTest, QuickSort_EmptyArray_NoError)
 {
 	quicksort(testar, 0);

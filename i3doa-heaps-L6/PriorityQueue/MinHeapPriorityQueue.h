@@ -8,7 +8,7 @@ public:
 	MinHeapPriorityQueue()	{}
 	void push(const T& x)	{ minHeap.insert(x);		}
 	void pop()				{ minHeap.remove();			}
-	T front()				{ return minHeap.peek();	} 
+	T front()				{ return minHeap.peek();	} // get() function
 	bool isEmpty() const	{ return minHeap.isEmpty();	}
 
 private:

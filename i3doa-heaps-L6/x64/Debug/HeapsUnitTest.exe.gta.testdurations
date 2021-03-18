@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\x64\Debug\HeapsUnitTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="Select.Select_Kis1_SmallestElementReturned" Duration="2" />
+    <TestDuration Test="Select.Select_Kis2_SecondSmallestElementReturned" Duration="1" />
+    <TestDuration Test="Select.Select_Kis4_SecondSmallestElementReturned" Duration="1" />
+    <TestDuration Test="Select.Select_KisArraySize_LargestElementReturned" Duration="1" />
+    <TestDuration Test="Select.Select_Kis0_ExceptionThrown" Duration="1" />
+    <TestDuration Test="Select.Select_KisLargerThanArray_ExceptionThrown" Duration="1" />
+    <TestDuration Test="Select.Select_SourceRemainsUntouched" Duration="1" />
+    <TestDuration Test="Heapsort.Heapsort_ArrayIsSorted" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Ctor_VanillaHeap_HeapIsEmpty" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Ctor_OneElementInserted_HeapIsNotEmpty" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Peek_OneElementInserted_CorrectElementInFront" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Peek_OneElementInsertedTwoPeeks_CorrectElementInFront" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Insert_TwoElementInserted_CorrectElementInFront" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Remove_OneElementInserted_HeapIsEmpty" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Remove_TwoElementsInsertedOneRemoved_HeapIsNotEmpty" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Remove_TwoElementsInsertedTwoRemoved_HeapIsEmpty" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Remove_TwoElementsInsertedOneRemoved_CorrectElementInFront" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Insert_FourElementsInsertedUnOrdered_CorrectElementInFront" Duration="1" />
+    <TestDuration Test="MinHeapUnitTest.Insert_FourElementsInsertedOneRemoved_CorrectElementInFront" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.Ctor_VanillaPQ_PQIsEmpty" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.Ctor_OneElementpushed_PQIsNotEmpty" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.front_OneElementpushed_CorrectElementInfront" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.front_OneElementpushedTwofronts_CorrectElementInfront" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.push_TwoElementpushed_CorrectElementInfront" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.pop_OneElementpushed_PQIsEmpty" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.pop_TwoElementspushedOnepopd_PQIsNotEmpty" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.pop_TwoElementspushedTwopopd_PQIsEmpty" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.pop_TwoElementspushedOnepopd_CorrectElementInfront" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.push_FourElementspushedUnOrdered_CorrectElementInfront" Duration="1" />
+    <TestDuration Test="PriorityQueueUnitTest.push_FourElementspushedOnepopd_CorrectElementInfront" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

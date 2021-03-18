@@ -1,0 +1,18 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  MinHeapUnitTest.cpp
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\Heaps\MinHeap.h(48,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\Heaps\MinHeap.h(36): message : while compiling class template member function 'void MinHeap<int>::remove(void)'
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\HeapsUnitTest\MinHeapUnitTest.cpp(64): message : see reference to function template instantiation 'void MinHeap<int>::remove(void)' being compiled
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\HeapsUnitTest\MinHeapUnitTest.cpp(9): message : see reference to class template instantiation 'MinHeap<int>' being compiled
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\Heaps\MinHeap.h(29,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\Heaps\MinHeap.h(24): message : while compiling class template member function 'void MinHeap<int>::insert(const T &)'
+          with
+          [
+              T=int
+          ]
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\HeapsUnitTest\MinHeapUnitTest.cpp(33): message : see reference to function template instantiation 'void MinHeap<int>::insert(const T &)' being compiled
+          with
+          [
+              T=int
+          ]
+  HeapsUnitTest.vcxproj -> C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-heaps-L6\x64\Debug\HeapsUnitTest.exe

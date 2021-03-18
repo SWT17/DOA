@@ -6,17 +6,19 @@
 class MinHeapUnitTest : public ::testing::Test
 {
 protected:
+	MinHeap<int> uut;
 
 	void SetUp()
 	{
-
+		vector<int> vec;
+		uut = MinHeap<int>(vec);
 	}
 
 	void TearDown()
 	{
+
 	}
 
-	MinHeap<int> uut;
 };
 
 

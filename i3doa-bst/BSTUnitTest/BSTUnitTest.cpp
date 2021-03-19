@@ -1,6 +1,7 @@
 #include"pch.h"
 #include "../BST/BST.h"
 
+
 class BSTToolkitUnitTest : public ::testing::Test
 {
 protected:
@@ -51,6 +52,15 @@ protected:
 TEST_F(BSTToolkitUnitTest, Search_EmptyTree_ElementNotFound)
 {
 	ASSERT_FALSE(uut.search(5));
+}
+
+TEST_F(BSTToolkitUnitTest, Search_NonEmptyTree_ElementFound)
+{
+	setupRawTree();
+
+	BST<int> uut(testRoot);
+
+	ASSERT_TRUE(uut.search(5));
 }
 
 TEST_F(BSTToolkitUnitTest, Insert_EmptyTree_ElementFound)
@@ -265,4 +275,102 @@ TEST_F(BSTToolkitUnitTest, Search_RawTreeSearchNonElement_ElementNotFound)
 	BST<int> myuut(testRoot);
 
 	ASSERT_FALSE(myuut.search(8));
+}
+
+TEST_F(BSTToolkitUnitTest, Remove_OneElementInsertedOneRemoved_ElmentNotFound)
+{
+	uut.insert(5);
+	uut.remove(5);
+	ASSERT_FALSE(uut.search(5));
+}
+
+TEST_F(BSTToolkitUnitTest, Remove_TwoElementInsertedLastRemoved_ElmentNotFound)
+{
+	uut.insert(5);
+	uut.insert(7);
+	uut.remove(7);
+	ASSERT_FALSE(uut.search(7));
+
+}
+
+TEST_F(BSTToolkitUnitTest, Remove_MultipleElementInsertedMultipleLeavesRemoved_ElmentNotFound)
+{
+	uut.insert(5);
+	uut.remove(7);
+	ASSERT_FALSE(uut.search(7));
+
+	uut.insert(6);
+	uut.insert(10);
+	uut.remove(10);
+	ASSERT_FALSE(uut.search(10));
+}
+
+TEST_F(BSTToolkitUnitTest, Remove_InsertOneRemoveOne_ElmentNotFound)
+{
+	/*      5
+	*  2        10
+	*   4    7
+	* 3          8
+	*/
+	uut.insert(5);
+	uut.insert(2);
+	uut.insert(10);
+	uut.insert(7);
+	uut.insert(4);
+	uut.insert(3);
+	uut.insert(8);
+
+	ASSERT_TRUE(uut.search(8));
+	uut.remove(8);
+	ASSERT_FALSE(uut.search(8));
+	
+}
+
+TEST_F(BSTToolkitUnitTest, Remove_Insert7NodesRemoveAllFromRoot_ElementNotFOund)
+{
+	/*      5
+	*  2        10
+	*   4    7
+	* 3          8
+	*/
+	/*Ideen er at skabe et kendt træ, og derefter trække værdierne ud en efter en fra root
+	*/
+
+	int test[7] = {5,2,10,7,4,3,8};
+	for (int i = 0; i < 7;i++)
+	{
+		uut.insert(test[i]);
+	}
+	int i = 0;
+
+	ASSERT_TRUE(uut.search(test[i]));
+	uut.remove(test[i]);
+	ASSERT_FALSE(uut.search(test[i]));
+	i = 1;
+	ASSERT_TRUE(uut.search(test[i]));
+	uut.remove(test[i]);
+	ASSERT_FALSE(uut.search(test[i]));
+	i = 2;
+	ASSERT_TRUE(uut.search(test[i]));
+	uut.remove(test[i]);
+	ASSERT_FALSE(uut.search(test[i]));
+	i = 3;
+	ASSERT_TRUE(uut.search(test[i]));
+	uut.remove(test[i]);
+	ASSERT_FALSE(uut.search(test[i]));
+	i = 4;
+	ASSERT_TRUE(uut.search(test[i]));
+	uut.remove(test[i]);
+	ASSERT_FALSE(uut.search(test[i]));
+	i = 5;
+	ASSERT_TRUE(uut.search(test[i]));
+	uut.remove(test[i]);
+	ASSERT_FALSE(uut.search(test[i]));
+	i = 6;
+	ASSERT_TRUE(uut.search(test[i]));
+	uut.remove(test[i]);
+	ASSERT_FALSE(uut.search(test[i]));
+
+
+
 }

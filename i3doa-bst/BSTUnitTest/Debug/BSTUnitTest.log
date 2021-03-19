@@ -1,0 +1,4 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  BSTUnitTest.cpp
+C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-bst\BST\BST.h(96): warning C4715: 'BST<int>::insertNode': not all control paths return a value
+  BSTUnitTest.vcxproj -> C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-bst\Debug\BSTUnitTest.exe

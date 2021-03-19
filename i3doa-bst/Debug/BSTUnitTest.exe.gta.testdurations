@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\nico_\Sundhedsteknologi\6. Semester\DOA\git\i3doa-bst\Debug\BSTUnitTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="BSTToolkitUnitTest.Insert_EmptyTree_ElementFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Search_EmptyTree_ElementNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Search_NonEmptyTree_ElementFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_ThreeInsertsAscendingOrder_AllElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_ThreeInsertsDescendingOrder_AllElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_ThreeInsertsRandomOrder_AllElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_ThreeInsertsRandomOrderMiddleRemoved_AllElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_InsertRemove_ElementNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_InsertRemoveInsert_ElementFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_TwoDuplicates_ElementFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_TwoDuplicatesOneRemoved_ElementFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_TwoNodesOneRemoved_ElementFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_ThreeInsertsAscendingOrderMiddleRemoved_AllElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_ThreeInsertsDescendingOrderMiddleRemoved_AllElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_RemoveLeaf_OtherElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_RemoveNodeWithOneChild_OtherElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_RemoveNodeWithTwoChildren_OtherElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_RawTreeRemove5_ElementsNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Insert_RawTreeInsert10_ElementFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Search_RawTreeSearchElements_ElementsFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Search_RawTreeSearchNonElement_ElementNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_OneElementInserted" Duration="7" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_OneElementInserted_ElmentNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_OneElementInsertedOneRemoved_ElmentNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_TwoElementInsertedLastRemoved_ElmentNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_MultipleElementInsertedMultipleLeavesRemoved_ElmentNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_InsertOneRemoveOne_ElmentNotFound" Duration="1" />
+    <TestDuration Test="BSTToolkitUnitTest.Remove_Insert7NodesRemoveAllFromRoot_ElementNotFOund" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
